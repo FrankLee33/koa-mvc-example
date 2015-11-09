@@ -31,8 +31,7 @@ app.use(views('views', {
 app.use(kstatic(__dirname + '/public'));
 
 
-//数据库配置
-
+// 修改数据库连接地址
 global.dbpool = mysql.createPool({
     host : 'localhost',
     port : 3306 ,
