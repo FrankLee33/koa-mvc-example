@@ -12,7 +12,7 @@
 <p>在根目录下找到create.sql文件，导入到你的MySQL数据库中</p>
 
 <p>修改app.js文件,根据上一步的数据库信息，修改数据库连接</p>
-
+<pre>
 // 修改数据库连接地址
 global.dbpool = mysql.createPool({
     host : 'localhost',
@@ -21,6 +21,7 @@ global.dbpool = mysql.createPool({
     user: 'root',
     password : ''
 });
+</pre>
 <h2>启动项目</h2>
 
 <p>node --harmony app.js</p>
